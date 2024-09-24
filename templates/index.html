@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h3 class="logo" style="padding-bottom: 20px; opacity: 3px;">Shabdan</h3>
+                <div class="nav-wrap">
+                    <ul class="nav-menu">
+                        <li><a href="/index/" class="tpage">О себе</a></li>
+                        <li><a href="/blog/">Блог</a></li>
+                        <li><a href="/contacts/">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<img class="nod" src="bs">
+
+<div class="container">
+    <div class="d-flex flex-column align-items-center" style="margin-bottom: 0;">
+        <h1 class="col-md-12 col-sm-12 text-center" style="padding: 10px;">Привет</h1>
+        <p class="col-md-4 col-sm-6 text-center" style="font-size: 20px;">
+            Привет, меня зовут Шабдан, мне {{ age }} и я буду программистом. Учусь языку программирования - "Python".
+            В данный момент у меня есть задание - написать этот сайт очень корректно и красиво.
+        </p>
+    </div>
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh; margin-top: 0;">
+        <img alt="prog-lg" src="./static/img/All prog.png" class="img-fluid" style="max-width: 95%; height: auto;">
+    </div>
+    <div class="col-md-5 col-xs-3 mx-auto text-center" style="font-size: 20px;">
+        <p>
+            Одной из главных причин, по которой я выбрал IT, является возможность постоянного развития. Технологии
+            стремительно меняются и развиваются, и чтобы оставаться конкурентоспособным в этой области, необходимо
+            постоянно учиться и обновлять свои знания. Мне нравится идея, что я никогда не перестану учиться. Этот
+            непрерывный процесс обучения и самосовершенствования делает работу в IT захватывающей и динамичной.
+        </p>
+    </div>
+    <div class="col-md-5 col-xs-3 mx-auto text-center" style="font-size: 20px; padding: 20px;">
+        <p>IT предлагает множество различных карьерных путей. Можно стать разработчиком программного обеспечения,
+            специалистом по кибербезопасности, аналитиком данных, дизайнером интерфейсов и многое другое. Эта
+            разнообразие позволяет выбрать то, что действительно интересно и что подходит именно тебе. Мне нравится
+            идея, что я могу экспериментировать и находить ту сферу в IT, которая будет наиболее соответствовать
+            моим интересам и талантам.
+        </p>
+    </div>
+</div>
+
+{% endblock %}

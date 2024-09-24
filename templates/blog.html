@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h3 class="logo">Shabdan</h3>
+                <div class="nav-wrap">
+                    <ul class="nav-menu">
+                        <li><a href="/index/">О себе</a></li>
+                        <li><a href="/blog/" class="tpage">Блог</a></li>
+                        <li><a href="/contacts/">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Первый блок -->
+        <div class="col-md-4 col-12">
+            <div class="blocks">
+                <h5 class="pb-2 blog-heading">Ошибки новичков</h5>
+                <img alt="err" src="/static/img/blog-photo-1.png" class="img-fluid">
+                <p>Многие новички стремятся сразу же освоить самые новые и популярные технологии, забывая при этом о
+                    фундаментальных основах. Это может привести к поверхностным знаниям и непониманию базовых
+                    принципов.</p>
+            </div>
+        </div>
+        <!-- Второй блок -->
+        <div class="col-md-4 col-12">
+            <div class="blocks">
+                <h5 class="pb-2 blog-heading">Как учить Python:</h5>
+                <img alt="python" src="/static/img/blog-photo-2.png" class="img-fluid">
+                <p>Python — это один из самых популярных языков программирования в мире,
+                    известный своей простотой и универсальностью. Python является языком с открытым исходным кодом,
+                    и его развитие поддерживается активным сообществом разработчиков по всему миру.</p>
+            </div>
+        </div>
+        <!-- Третий блок -->
+        <div class="col-md-4 col-12">
+            <div class="blocks">
+                <h5 class="pb-2 blog-heading">Тренды среди языков:</h5>
+                <img alt="popular language" src="/static/img/blog-photo-3.png" class="img-fluid">
+                <p>Существует множество языков программирования, каждый из которых имеет свои уникальные особенности и области применения. Вот некоторые из самых популярных языков программирования в {{ year }} году и причины их популярности.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
